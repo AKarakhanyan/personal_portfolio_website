@@ -277,6 +277,7 @@ ul.nav a:active, ul.nav a:hover {
   text-indent: 4vw;
 }
 
+
 .col-xs-7 {
   padding-top: 5%;
 }
@@ -292,6 +293,26 @@ h1 {
 .row .thumbnail {
   border: 1px solid black;
   height: 100% !important;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 .row .thumbnail a img {
